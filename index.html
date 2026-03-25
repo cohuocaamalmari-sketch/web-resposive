@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Responsivo Colorido</title>
+    <style>
+       
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #2c3e50; 
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+       
+        .imagen-header {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+      
+        .container {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap; 
+        }
+        
+        .barramenu {
+            background-color: #ecf0f1; 
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+        }
+
+        .principal {
+            background-color: #3498db; 
+            color: white;
+            flex: 3;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .infoextra {
+            background-color: #e67e22; 
+            color: white;
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #1a252f; 
+            color: #bdc3c7;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mi Sitio Web Responsivo</h1>
+        <img src="montaña-.png" alt="Imagen de cabecera" class="imagen-header">
+    </header>
+
+    <div class="container">
+        <div class="barramenu">
+            <h3>Menú</h3>
+            <p>Este es el lateral ahora en gris suave.</p>
+        </div>
+        
+        <div class="principal">
+            <h2>Contenido Principal</h2>
+            <p>Yo soy el área azul. En pantallas grandes soy ancho, en móviles me estiro.</p>
+        </div>
+
+        <div class="infoextra">
+            <h3>Info Extra</h3>
+            <p>Un toque de naranja para resaltar información.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p><strong>Desarrollado por:</strong> Cristina Cohuo </p>
+    
+        <p>Pie de página &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
